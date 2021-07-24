@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}URL Shortener{% endblock %}
+
+
+{% block body %}
+
+<div class="Wrapper">
+        <h1 class="Title">GC URL Shortener</h1>
+
+        <div class="Input">
+            <input id="myInput" class="Input-text" value="http://127.0.0.1:5000/{{output}}">
+        </div>
+        <div>
+            <button class="w3-btn w3-block w3-large w3-black" onclick="myFunction()">Copy Link</button>
+        </div>
+        <a class="Title2" href="/">Shorten More Links</a>
+</div>
+
+{% endblock %}
